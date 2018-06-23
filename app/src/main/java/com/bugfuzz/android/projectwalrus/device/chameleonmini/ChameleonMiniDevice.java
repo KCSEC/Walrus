@@ -217,6 +217,10 @@ public class ChameleonMiniDevice extends LineBasedUsbSerialCardDevice
     public void emulateCardData(final CardData cardData, final CardDataOperationCallbacks callbacks)
             throws IOException {
         // TODO: ask what slot if not specified in settings here
+        // Check select_chameleon_cardslot checkbox preference
+        // If checkbox preference is true (default value) then ask user to pick/select card slot to emulate.
+        // Open ChameleonMiniSlotPickerPreference and set new value SLOT_KEY to be used in emulate function
+        // If checkbox preference is false use the DEFAULT_SLOT_KEY
 
         if (!tryAcquireAndSetStatus(context.getString(R.string.emulating))) {
             throw new IOException(context.getString(R.string.device_busy));

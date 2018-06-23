@@ -486,6 +486,13 @@
         slot to be used for emulation
     </string>
 
+    <!-- Checkbox Preference title -->
+    <string name="select_card_slot_preference">Select Card Slot</string>
+
+    <!-- Checkbox Preference message -->
+    <string name="select_card_slot_preference_message">Default <xliff:g>Choose a card slot to be used for card emulation or use the default card slot</xliff:g> card
+        slot to be used for emulation
+    </string>
 
     <!--
         Proxmark3Activity

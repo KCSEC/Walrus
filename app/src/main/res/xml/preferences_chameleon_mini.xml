@@ -19,6 +19,13 @@
   -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="select_chameleon_cardslot"
+        android:summary="@string/select_card_slot_preference_message"
+        android:title="@string/select_card_slot_preference"/>
+
     <com.bugfuzz.android.projectwalrus.device.chameleonmini.ui.ChameleonMiniSlotPickerPreference
         android:defaultValue="1"
         android:key="default_chameleon_cardslot"
